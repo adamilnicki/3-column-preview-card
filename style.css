@@ -39,92 +39,124 @@ font-family: 'Big Shoulders Display', cursive;
 font-family: 'Lexend Deca', sans-serif;
 */
 
-*{
-  margin:0;
-  padding:0;
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-body{
-  font-size:15px;
+body {
+  font-size: 15px;
   font-family: 'Lexend Deca', sans-serif;
-  background-color:hsl(0, 0%, 95%);
-  padding:5.5rem 1.5rem;
+  background-color: hsl(0, 0%, 95%);
+  padding: 5.5rem 1.5rem;
 }
 
-div:first-of-type{
+div:first-of-type {
   border-radius: .5rem .5rem 0 0;
 }
 
-div:last-of-type{
+div:last-of-type {
   border-radius: 0 0 .5rem .5rem;
 }
 
-.sedan-container,
-.suv-container,
-.luxury-container{
-  padding:3rem 3rem;
-
+.car-container{
+  padding: 3rem 3rem;
 }
 
-.sedan-container{
+.sedan-container {
   background-color: hsl(31, 77%, 52%);
 }
 
-.suv-container{
-  background-color:hsl(184, 100%, 22%);
+.suv-container {
+  background-color: hsl(184, 100%, 22%);
 }
 
-.luxury-container{
-  background-color:hsl(179, 100%, 13%);
+.luxury-container {
+  background-color: hsl(179, 100%, 13%);
 }
 
-.car-icon{
-  margin-bottom:2rem;
+.car-icon {
+  margin-bottom: 2rem;
 }
 
-.car-title{
-  font-size:2.5rem;
-  color:hsl(0, 0%, 95%);
-  text-transform:uppercase;
+.car-title {
+  font-size: 2.5rem;
+  color: hsl(0, 0%, 95%);
+  text-transform: uppercase;
   font-family: 'Big Shoulders Display', cursive;
-  margin-bottom:2rem;
+  margin-bottom: 1.8rem;
 }
 
-.car-paragraph{
-  color:hsla(0, 0%, 100%, 0.75);
-  margin-bottom:2.2rem;
-  line-height:1.6rem;
+.car-paragraph {
+  color: hsla(0, 0%, 100%, 0.75);
+  margin-bottom: 2.2rem;
+  line-height: 1.5rem;
 }
 
-.btn{
-  padding:.9rem 2rem;
+.btn {
+  padding: .7rem 1.8rem;
   text-decoration: none;
-  background-color:hsl(0, 0%, 95%);
-  border-radius:6rem / 6rem;
+  background-color: hsl(0, 0%, 95%);
+  border-radius: 6rem / 6rem;
+  border:3px solid hsl(0, 0%, 95%);
 }
 
-
-.btn-sedan{
-  color:hsl(31, 77%, 52%);
+.btn-sedan {
+  color: hsl(31, 77%, 52%);
 }
 
-.btn-suv{
-  color:hsl(184, 100%, 22%);
+.btn-suv {
+  color: hsl(184, 100%, 22%);
 }
 
-.btn-luxury{
-  color:hsl(179, 100%, 13%);
+.btn-luxury {
+  color: hsl(179, 100%, 13%);
 }
-
-
-
 
 .attribution {
   font-size: 11px;
   text-align: center;
+  width:100%;
 }
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (min-width:1440px){
+  body{
+    padding:10rem 16rem;
+  }
+
+  .wrapper{
+    display:flex;
+  }
+
+  div:first-of-type{
+    border-radius: .5rem 0 0 .5rem;
+  }
+  div:last-of-type{
+    border-radius: 0 .5rem .5rem 0;
+  }
+
+  .car-container{
+    padding:3rem 3.2rem;
+  }
+
+  .car-paragraph{
+    margin-bottom:5.5rem;
+  }
+
+  .btn{
+    display:inline-block;
+    margin-bottom:.2rem;
+  }
+
+  .btn:active,
+  .btn:hover{
+    border:3px solid hsl(0, 0%, 95%);
+    background-color:transparent;
+    color:hsl(0, 0%, 95%);
+  }
 }
